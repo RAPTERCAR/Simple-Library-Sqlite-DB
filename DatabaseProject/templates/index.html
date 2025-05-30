@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<!-- Took the login page from the example because everything just works
+I can explain what things do if need be -->
+<body>
+    <h1>Library login</h1>
+    <div id = "msgs">{{messages}}</div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" /><br/><br/>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" /><br/><br/>
+    <button type="submit" id="login">Login</button>
+
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>

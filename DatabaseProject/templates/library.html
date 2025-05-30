@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{url_for('static',filename='js/libscript.js')}}"></script>
+    <title>library</title>
+</head>
+<body>
+    ADD USER:<br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+    <label for="fName">F Name:</label>
+    <input type="text" id="fName" name="fName" />
+    <label for="lName">L Name:</label>
+    <input type="text" id="lName" name="lName" />
+    <label for="role">ROLE:</label>
+    <input type="text" id="role" name="role" /><br>
+    <button id="addU">Add User</button><br>
+    ADD ITEM:<br>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" />
+    <label for="format">format:</label>
+    <input type="text" id="format" name="format" />
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" /><br>
+    <button id="addI">Add Item</button><br>
+    SEARCH ITEMS:<br>
+    <input type="text" id="stitle" name="title"/>
+    <button id="search">search</button><br>
+    <button id="browse">Browse All</button><br>
+    VIEW USERS:<br>
+    <button type="submit" id="allU">View all</button><br>
+    <input type="text" id="idU" name="idU"/>
+    <button id="sID">View ID</button><br>
+    VIEW CHECKED OUT:<br>
+    <input type="text" id="cidU" name="cidU"/>
+    <button id="cID">search ID</button><br>
+    <div id="output"></div>
+    <a href="/logout">Logout</a>
+
+</body>
+</html>

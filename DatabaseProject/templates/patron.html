@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{url_for('static',filename='js/patscript.js')}}"></script>
+    <title>Document</title>
+</head>
+<body>
+    Search Library<br>
+    <button id="browse">Browse All</button><br>
+    <input type="text" id="stitle" name="stitle"/>
+    <button id="search">search</button><br>
+    <input type="text" id="ptitle" name="title"/>
+    <button id="checkout">check out</button><br>
+    <button id="checked">view my books</button>
+    <div id="output"></div>
+    <a href="/logout">Logout</a>
+</body>
+</html>
